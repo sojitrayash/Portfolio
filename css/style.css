@@ -95,7 +95,40 @@
 .navbar .navbar-nav .nav-link.active {
     color: var(--primary);
 }
-
+.slider-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .slider {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
         padding: 10px 0;
